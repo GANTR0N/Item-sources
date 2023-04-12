@@ -15,6 +15,8 @@ def runeLiteVersion = 'latest.release'
 dependencies {
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
 
+	implementation 'org.jsoup:jsoup:1.15.4'
+
 	compileOnly 'org.projectlombok:lombok:1.18.20'
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
@@ -23,8 +25,8 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.example'
-version = '1.0-SNAPSHOT'
+group = 'com.itemsources'
+version = '0.8'
 sourceCompatibility = '1.8'
 
 tasks.withType(JavaCompile) {
